@@ -1,0 +1,170 @@
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+input,
+button {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+
+h2 {
+  margin: 0 0 20px 0;
+  line-height: 1;
+  font-size: 22px;
+  color: #2141eb;
+}
+
+.form-wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f1f8ff;
+}
+
+.form-container {
+  min-width: 400px;
+  min-height: 400px;
+  background: white;
+  padding: 1.8rem 1.5em;
+  /* border-radius: 8px; */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  position: relative;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  opacity: 0;
+  transform: translateY(35px);
+  transition: all 0.5s ease;
+  position: relative;
+  height: 0;
+  overflow: hidden;
+}
+
+.form-group:last-child {
+  margin-bottom: 0;
+}
+
+.form-group.active {
+  opacity: 1;
+  transform: translateY(0);
+  height: auto;
+}
+
+.form-group.filled {
+  transform: translateY(-5px);
+  transition: transform 0.5s ease;
+}
+
+.form-group.shake {
+  animation: shake 0.3s;
+}
+
+@keyframes shake {
+
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  20% {
+    transform: translateX(-5px);
+  }
+
+  30%,
+  40% {
+    transform: translateX(5px);
+  }
+
+  50%,
+  60% {
+    transform: translateX(-5px);
+  }
+
+  70%,
+  80% {
+    transform: translateX(5px);
+  }
+
+  90% {
+    transform: translateX(0);
+  }
+}
+
+.form-group input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #a59e9e;
+  outline: none;
+  font-size: 1rem;
+}
+
+.error {
+  color: red;
+  font-size: 0.8rem;
+}
+
+.read-only {
+  margin-bottom: 10px;
+  display: flex;
+}
+
+.read-only strong {
+  width: 50%;
+}
+
+.buttons {
+  text-align: center;
+  margin: 40px auto 0;
+}
+
+#summary {
+  margin-bottom: 1.5em;
+}
+
+#editBtn,
+#saveBtn {
+  background: #2dad1f;
+  padding: 0.7em 1.5em;
+  border: 1px solid #2dad1f;
+  outline: none;
+  font-size: 1em;
+  color: #fff;
+  cursor: pointer;
+  line-height: 1;
+  transition: 0.5s;
+}
+
+#editBtn:hover {
+  border: 1px solid #2141eb;
+  color: #2141eb;
+  background: transparent;
+}
+
+#editBtn {
+  background: #2141eb;
+  margin-right: 10px;
+  border: 1px solid #2141eb;
+}
+
+#saveBtn:hover {
+  border: 1px solid #2dad1f;
+  color: #2dad1f;
+  background: transparent;
+}

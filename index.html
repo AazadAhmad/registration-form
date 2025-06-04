@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Front End Developer Assignment</title>
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" >
+  
+  <link rel="stylesheet" href="css/style.css" >
+
+</head>
+<body>
+  <div class="form-wrapper">
+    <div class="form-container">
+      <h2>Registration Form</h2>
+      <form id="progressiveForm" autocomplete="off">
+        <div class="form-group" data-index="0">
+          <input type="text" name="fullName" placeholder="Full Name" required />
+          <div class="error"></div>
+        </div>
+        <div class="form-group" data-index="1">
+          <input type="tel" name="phone" placeholder="Phone" maxlength="10" required />
+          <div class="error"></div>
+        </div>
+        <div class="form-group" data-index="2">
+          <input type="email" name="email" placeholder="Email" required />
+          <div class="error"></div>
+        </div>
+        <div class="form-group" data-index="3">
+          <input type="text" name="city" placeholder="City" required />
+          <div class="error"></div>
+        </div>
+        <div class="form-group" data-index="4">
+          <input type="text" name="sport" placeholder="Favorite Sport" required />
+          <div class="error"></div>
+        </div>
+        <div class="form-group" data-index="5">
+          <input type="text" name="team" placeholder="Favorite Team" required />
+          <div class="error"></div>
+        </div>
+        <div class="form-group" data-index="6">
+          <input type="text" name="icon" placeholder="Favorite Sports Icon" required />
+          <div class="error"></div>
+        </div>
+      </form>
+      <div id="summary" style="display: none;"></div>
+      <div id="buttons" class="buttons" style="display: none;">
+        <button id="editBtn" type="button">Edit</button>
+        <button id="saveBtn" type="button">Save</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
