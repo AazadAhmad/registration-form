@@ -11,7 +11,7 @@ html {
 body {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 15px;
 }
 
 input,
@@ -123,11 +123,12 @@ h2 {
 .read-only {
   margin-bottom: 10px;
   display: flex;
+  justify-content: space-between;
 }
 
-.read-only strong {
+/* .read-only strong {
   width: 50%;
-}
+} */
 
 .buttons {
   text-align: center;
